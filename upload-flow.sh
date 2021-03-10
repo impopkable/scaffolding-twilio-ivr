@@ -6,9 +6,6 @@ CURRENTFLOW=$STAGING_FLOW
 if [ $2 = "production" ]
 then
     CURRENTFLOW=$PRODUCTION_FLOW
-elif [ $2 = "staging"]
-then
-    CURRENTFLOW=$STAGING_FLOW
 else
     CURRENTFLOW=$2
 fi
