@@ -59,4 +59,5 @@ TO_SID=$ACCOUNT_SID
 TO_AUTH=$AUTH_TOKEN
 TO_FLOW=$PRODUCTION_FLOW
 bash download.v2.sh $FROM_SID $FROM_AUTH $FROM_FLOW
+cp flows/${FROM_FLOW}.json profiles/${sourceProfile}/flows/${FROM_FLOW}.json
 bash upload.v2.sh $TO_SID $TO_AUTH $FROM_FLOW $TO_FLOW
