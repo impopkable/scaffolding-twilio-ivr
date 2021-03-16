@@ -4,12 +4,16 @@
 #check if have getbusiness hours url
 echo "Impekable deploy IVR v2."
 #check if have params 1 or params 
-if [ !(-d "./profiles") ]
+if [ -d "./profiles" ]
 then
+    echo "."
+else
     mkdir profiles
 fi
-if [ !(-d "./flows") ]
+if [ -d "./flows" ]
 then
+    echo ".."
+else
     mkdir flows
 fi
 while : ; do
