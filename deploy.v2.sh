@@ -5,9 +5,11 @@
 echo "Impekable deploy IVR v2."
 #check if have params 1 or params 
 if [ -d "./profiles" ]
+then
     mkdir profiles
 fi
 if [ -d "./flows" ]
+then
     mkdir flows
 fi
 while : ; do
