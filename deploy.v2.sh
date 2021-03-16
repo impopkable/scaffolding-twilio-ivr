@@ -18,7 +18,7 @@ while : ; do
         break
     else
         echo "Creating a profile ${sourceProfile}"
-        bash create-profile.v2.sh
+        bash create-profile.v2.sh $sourceProfile
         break
     fi
 done
@@ -37,7 +37,7 @@ while : ; do
         break;
     else
         echo "Creating a profile ${destinyProfile}"
-        bash create-profile.v2.sh
+        bash create-profile.v2.sh $destinyProfile
         break
     fi
 done

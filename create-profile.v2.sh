@@ -20,7 +20,12 @@ while : ; do
     fi
 done
 while : ; do
-    read -p "profile's name: " name
+    if [ -z "$1" ]
+    then
+        read -p "profile's name: " name
+    else
+        name=$1
+    fi
     if [ -z "$name" ]
     then
         echo "Please enter profile name"
